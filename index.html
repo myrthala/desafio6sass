@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangelArts</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+        rel="stylesheet"
+    />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- My Stylesheet-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <a href="index.html"> 
+                <img src="resources/imageLogoMangelArts.jpg" alt="MangelArts"> 
+            </a>            
+        </div>
+        <label for="menu" class="header__burgerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="header__menu">
+            <label for="menu" class="header__closeMenu">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/about.html">Acerca de</a></li>
+                <li><a href="pages/gallery.html">Galería</a></li>
+                <li><a href="pages/commissions.html">Comisiones</a></li>
+                <li><a href="pages/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home__mainContainer">
+        <section class="home__heroImage">
+            <h1 class="animate__animated animated__backInLeft">Mangel<em>Arts</em></h1>
+        </section>
+        <section class="home__categoriesContainer">
+            <article class="home__category--image" id="category__image2">
+                <div class="filter"></div>
+                <a href=".pages/gallery.html#Fantasy" class="home__category--link">Fantasía</a>
+            </article>
+            <article class="home__category--image" id="category__image1">
+                <div class="filter"></div>
+                <a href=".pages/gallery.html#Portrait" class="home__category--link">Retrato</a>
+            </article>
+            <article class="home__category--image" id="category__image3">
+                <div class="filter"></div>
+                <a href=".pages/gallery.html#FanArt" class="home__category--link">FanArt</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="index__topButton">
+            <a href="#top" class="goUp"> <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer__socialMedia-container">
+            <a href="https://www.instagram.com/mangelarte"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/mangelarte"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.tiktok.com/@mangelarts"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.behance.net/mangelart"><i class="fa-brands fa-behance-square"></i></a>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
