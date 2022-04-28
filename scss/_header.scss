@@ -12,31 +12,25 @@ header
   .header__logo 
   {
     height: 3rem;
-    width: 100;
+    width: 3rem;
     img 
     {
     width: 100%;
     border-radius: 90%;
-    :hover 
-    {
-      transform: rotate(45deg) scale(1.5);
-    }
     }
   }
+
+      
   .header__menu 
   {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
-    height: 100%;
+    width: 50%; 
+    height: 60%;
     background-color: $headerBackground;
 
-      button.header__burgerMenu:hover 
-      {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      }
       
       .header__closeMenu {
         position: absolute;
@@ -58,7 +52,7 @@ header
           border-radius: 5px;
           padding: 0.5rem;
           :hover {
-            background-image: linear-gradient(to right, #b1d0e0, whitesmoke);
+            background-image: linear-gradient(to right, $color1, $headerBackground);
           }
         }
       }
@@ -104,3 +98,5 @@ header
 
   }
 }
+
+
