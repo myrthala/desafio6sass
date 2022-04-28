@@ -1,11 +1,80 @@
 @charset "UTF-8";
 /* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #1A374D; }
+
 /* CÓDIGO DEL HEADER*/
 header {
   position: sticky;
   width: 100%;
-  top: 0; }
-  header nav {
-    display: flex; }
-    header nav ul {
-      display: flex; }
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 0.5rem 1 rem;
+  z-index: 999;
+  /* Media queries */ }
+  header .header__logo {
+    height: 3rem;
+    width: 100; }
+    header .header__logo img {
+      width: 100%;
+      border-radius: 90%; }
+      header .header__logo img :hover {
+        transform: rotate(45deg) scale(1.5); }
+  header .header__menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke; }
+    header .header__menu button.header__burgerMenu:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+    header .header__menu .header__closeMenu {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1.5rem; }
+    header .header__menu ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%; }
+      header .header__menu ul li {
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 0.5rem; }
+        header .header__menu ul li :hover {
+          background-image: linear-gradient(to right, #b1d0e0, whitesmoke); }
+  header input#menu {
+    display: none; }
+  header input#menu:checked ~ .header__menu {
+    display: block; }
+  @media screen and (min-width: 768px) {
+    header header .header__burgerMenu {
+      display: none; }
+    header header .header__menu .header__closeMenu {
+      display: none; }
+    header header .header__menu {
+      display: initial;
+      position: inherit;
+      width: 90%; }
+    header header .header__menu ul {
+      flex-direction: row;
+      justify-content: space-evenly; } }
